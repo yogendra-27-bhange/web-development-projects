@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Search Section -->
+        <div class="search-section">
+            <h1>Weather Dashboard</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Enter city name..." id="search-input">
+                <button id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="recent-searches">
+                <h3>Recent Searches</h3>
+                <div class="search-history">
+                    <!-- Recent searches will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Weather Section -->
+        <div class="current-weather">
+            <div class="weather-info">
+                <div class="location">
+                    <h2 id="city-name">New York</h2>
+                    <p id="date">Monday, 15 March 2024</p>
+                </div>
+                <div class="temperature">
+                    <h1 id="temp">24°C</h1>
+                    <p id="weather-desc">Sunny</p>
+                </div>
+                <div class="weather-details">
+                    <div class="detail">
+                        <i class="fas fa-wind"></i>
+                        <span id="wind">5 km/h</span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-tint"></i>
+                        <span id="humidity">65%</span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                        <span id="pressure">1013 hPa</span>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-icon">
+                <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" id="weather-img">
+            </div>
+        </div>
+
+        <!-- Hourly Forecast -->
+        <div class="hourly-forecast">
+            <h2>Hourly Forecast</h2>
+            <div class="hourly-container">
+                <!-- Hourly forecast items will be added here dynamically -->
+                <div class="hourly-item">
+                    <p class="hour">12:00</p>
+                    <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather">
+                    <p class="temp">24°C</p>
+                </div>
+                <div class="hourly-item">
+                    <p class="hour">13:00</p>
+                    <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather">
+                    <p class="temp">25°C</p>
+                </div>
+                <div class="hourly-item">
+                    <p class="hour">14:00</p>
+                    <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather">
+                    <p class="temp">26°C</p>
+                </div>
+                <div class="hourly-item">
+                    <p class="hour">15:00</p>
+                    <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather">
+                    <p class="temp">25°C</p>
+                </div>
+                <div class="hourly-item">
+                    <p class="hour">16:00</p>
+                    <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather">
+                    <p class="temp">24°C</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daily Forecast -->
+        <div class="daily-forecast">
+            <h2>5-Day Forecast</h2>
+            <div class="daily-container">
+                <!-- Daily forecast items will be added here dynamically -->
+                <div class="daily-item">
+                    <p class="day">Mon</p>
+                    <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather">
+                    <div class="temp-range">
+                        <span class="max">26°C</span>
+                        <span class="min">18°C</span>
+                    </div>
+                </div>
+                <div class="daily-item">
+                    <p class="day">Tue</p>
+                    <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="Weather">
+                    <div class="temp-range">
+                        <span class="max">25°C</span>
+                        <span class="min">17°C</span>
+                    </div>
+                </div>
+                <div class="daily-item">
+                    <p class="day">Wed</p>
+                    <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="Weather">
+                    <div class="temp-range">
+                        <span class="max">24°C</span>
+                        <span class="min">16°C</span>
+                    </div>
+                </div>
+                <div class="daily-item">
+                    <p class="day">Thu</p>
+                    <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="Weather">
+                    <div class="temp-range">
+                        <span class="max">23°C</span>
+                        <span class="min">15°C</span>
+                    </div>
+                </div>
+                <div class="daily-item">
+                    <p class="day">Fri</p>
+                    <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather">
+                    <div class="temp-range">
+                        <span class="max">25°C</span>
+                        <span class="min">17°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form id="admissionForm" class="admission-form">
+            <h1>College Admission Form</h1>
+            
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male" required>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        Other
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="branch">Preferred Branch</label>
+                <select id="branch" name="branch" required>
+                    <option value="">Select Branch</option>
+                    <option value="cse">Computer Science Engineering</option>
+                    <option value="ece">Electronics & Communication</option>
+                    <option value="me">Mechanical Engineering</option>
+                    <option value="ce">Civil Engineering</option>
+                    <option value="ee">Electrical Engineering</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="previousSchool">Previous School/College</label>
+                <input type="text" id="previousSchool" name="previousSchool" required>
+            </div>
+
+            <div class="form-group">
+                <label for="percentage">Previous Percentage/CGPA</label>
+                <input type="number" id="percentage" name="percentage" step="0.01" min="0" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label>Documents Required</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="documents" value="marksheet" required>
+                        Previous Marksheet
+                    </label>
+                    <label>
+                        <input type="checkbox" name="documents" value="transfer" required>
+                        Transfer Certificate
+                    </label>
+                    <label>
+                        <input type="checkbox" name="documents" value="character" required>
+                        Character Certificate
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

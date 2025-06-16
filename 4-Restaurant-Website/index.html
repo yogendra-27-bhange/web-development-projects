@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Delights - Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Gourmet Delights</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Gourmet Delights</h1>
+            <p>Experience the finest dining with our exquisite cuisine</p>
+            <a href="#menu" class="cta-button">View Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="starters">Starters</button>
+            <button class="category-btn" data-category="main">Main Course</button>
+            <button class="category-btn" data-category="desserts">Desserts</button>
+        </div>
+        <div class="menu-items">
+            <div class="menu-item" data-category="starters">
+                <img src="https://source.unsplash.com/300x200/?bruschetta" alt="Bruschetta">
+                <h3>Classic Bruschetta</h3>
+                <p>Toasted bread topped with fresh tomatoes, basil, and olive oil</p>
+                <span class="price">$8.99</span>
+            </div>
+            <div class="menu-item" data-category="main">
+                <img src="https://source.unsplash.com/300x200/?steak" alt="Steak">
+                <h3>Prime Rib Steak</h3>
+                <p>Grilled to perfection with herb butter and seasonal vegetables</p>
+                <span class="price">$29.99</span>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <img src="https://source.unsplash.com/300x200/?tiramisu" alt="Tiramisu">
+                <h3>Classic Tiramisu</h3>
+                <p>Layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                <span class="price">$7.99</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <p>Founded in 2010, Gourmet Delights has been serving exceptional cuisine in a warm and inviting atmosphere. Our chefs combine traditional techniques with modern innovation to create memorable dining experiences.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We source the finest local ingredients daily</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-award"></i>
+                    <h3>Award Winning</h3>
+                    <p>Recognized for culinary excellence</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Expert Team</h3>
+                    <p>Led by renowned chefs with years of experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Gourmet Street, Foodville, FL 12345</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@gourmetdelights.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Mon-Sun: 11:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Gourmet Delights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
